@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar | Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Demo Banner -->
+    <div class="demo-banner">
+        <div class="container banner-flex">
+            <span>Assignment 5: Responsive Navigation Bar (Resize window to test mobile stacking)</span>
+            <a href="../../index.html" class="hub-btn">← Master Hub</a>
+        </div>
+    </div>
+
+    <!-- Responsive Navigation Component -->
+    <header class="site-header">
+        <nav class="navbar container">
+            
+            <!-- Site Logo / Brand -->
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">🌐</span>
+                <span class="logo-text">EduTech<span class="logo-accent">.Hub</span></span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle (Pure CSS checkbox toggle) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation Menu">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item nav-cta">
+                    <a href="#get-started" class="btn-enroll">Get Started</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Showcase Content Area -->
+    <main class="page-content container">
+        <section class="info-card">
+            <h1>Responsive Flexbox Navigation Bar</h1>
+            <p>
+                This navigation bar leverages modern CSS3 Flexbox for distribution and spacing.
+            </p>
+            <div class="features-list">
+                <div class="feature-box">
+                    <h3>🖥️ Desktop Layout</h3>
+                    <p>Menu items are arranged horizontally across the main axis with smooth hover underlines, color shifts, and active state indicators.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>📱 Mobile Stacking</h3>
+                    <p>On screens below <code>768px</code>, the menu converts smoothly into a clean vertical stacked drawer with zero JavaScript required!</p>
+                </div>
+                <div class="feature-box">
+                    <h3>✨ Pure CSS State</h3>
+                    <p>Utilizes semantic <code>&lt;nav&gt;</code>, accessible anchor tags, CSS transition animations, and pseudo-classes (<code>:hover</code>, <code>:active</code>, <code>::after</code>).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <p>&copy; 2026 Responsive Navbar Demonstration • Assignment 5</p>
+    </footer>
+
+</body>
+</html>
